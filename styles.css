@@ -1,0 +1,59 @@
+html {
+  background-color: #00788c;
+}
+
+main {
+  margin: 16px auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+h1 {
+  text-align: center;
+}
+form button {
+  background: lightgrey;
+  padding: 11px;
+  width: 80%;
+  border: 0;
+}
+select,
+option,
+input,
+label,
+button {
+  padding: 6px;
+}
+.form-box {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media all and (min-width: 500px) {
+  .form-box label {
+    display: block;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .form-box {
+    flex-direction: row;
+  }
+  .form-box label {
+    flex-basis: 144px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .form-box input,
+  .form-box select,
+  .form-box textarea {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .form-box button {
+    margin-left: 9rem;
+  }
+}
